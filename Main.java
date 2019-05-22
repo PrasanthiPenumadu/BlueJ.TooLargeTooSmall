@@ -12,7 +12,14 @@ public class Main
         System.out.println("Guess the number");
         
         while(unum!=num){
+            int j=unum;
          unum=ui.nextInt();
+        
+         if(unum==j){
+            count--;
+             System.out.println("You already guessed this Number,Please try again");
+            
+            }
         if(unum==num){
         count++;
         System.out.println("Congratulations! You guessed it right in "+count+"guesses");
